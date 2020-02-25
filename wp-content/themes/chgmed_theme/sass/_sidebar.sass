@@ -1,0 +1,54 @@
+.hospital
+  padding-top: 50px
+.sidebar
+  // border: 1px solid gray 
+  padding: 5px
+  &_title
+    text-transform: uppercase
+    font-weight: 600
+    margin-bottom: 20px
+    color: $gray
+  li 
+    
+    &:hover 
+      background-color: $main-color
+    ul 
+      li 
+        a
+          position: relative
+          padding: 6px  6px  6px  18px 
+          color: #333
+          display: block
+          width: 100%
+          height: 100%
+          // &::before
+          //   font-size: 14px
+          //   position: relative
+          &::after
+            content: '.'
+            font-size: 19px 
+            font-weight: 600
+            line-height: 0px
+            color: #333 
+            position: absolute
+            left: 7px
+            top: 13px
+          
+          &:hover
+            &::after
+              color: #eef
+            
+
+    a 
+      padding: 6px  6px  6px  18px 
+      color: #222
+      display: block
+      width: 100%
+      height: 100%
+      &::before
+        font-size: 14px
+        position: relative
+
+
+      &:hover
+        color: #eef

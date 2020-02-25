@@ -1,0 +1,123 @@
+.about
+  height: auto
+  padding-top: 220px
+  padding-bottom: 50px
+
+  &-description 
+    &_title 
+      display: block
+      font-size: 40px
+      color: gray
+      font-weight: bold
+      // width: 30vh
+      position: relative
+    &::before
+      margin-top: 17px
+      width: 3px
+      height: 79px
+      content: ''
+      position: absolute
+      left: -10px
+      background: $main-color
+    &_text
+      padding-top: 40px
+  &-report 
+    border-left: 3px solid $main-color
+    h5 
+      padding: 20px 0
+    p 
+      color: #333333
+
+
+  &-photo 
+    display: flex
+    flex-direction: column
+    align-items: flex-end
+    &_img
+      width: 100%
+      height: auto
+    &_description
+      text-align: center
+
+@media screen and (max-width: 1199px)
+  .about
+    height: auto
+    padding-top: 220px
+    padding-bottom: 50px
+
+    &-description 
+      margin-bottom: 50px
+      &_title 
+        display: block
+        font-size: 40px
+        color: gray
+        font-weight: bold
+        // width: 30vh
+        position: relative
+      &::before
+        margin-top: 17px
+        width: 3px
+        height: 79px
+        content: ''
+        position: absolute
+        left: -10px
+        background: $main-color
+      &_text
+        padding-top: 40px
+    &-report 
+      border-left: none
+      h5 
+        padding: 0
+      p 
+        color: #333333
+    &-photo 
+      display: flex
+      flex-direction: column
+      align-items: flex-end
+      &_img
+        max-width: 100%
+      &_description
+        text-align: center
+// @media screen and (max-width: 991px)
+
+// @media screen and (max-width: 767px)
+
+@media screen and (max-width: 576px)
+ .about
+    height: auto
+    padding-top: 220px
+    padding-bottom: 50px
+
+    &-description 
+      margin-bottom: 50px
+      &_title 
+        display: block
+        font-size: 40px
+        color: gray
+        font-weight: bold
+        // width: 30vh
+        position: relative
+      &::before
+        margin-top: 17px
+        width: 3px
+        height: 79px
+        content: ''
+        position: absolute
+        left: -10px
+        background: $main-color
+      &_text
+        padding-top: 40px
+    &-report 
+      border-left: none
+      h5 
+        padding: 0
+      p 
+        color: #333333
+    &-photo 
+      display: flex
+      flex-direction: column
+      align-items: center
+      &_img
+        max-width: 100%
+      &_description
+        text-align: center

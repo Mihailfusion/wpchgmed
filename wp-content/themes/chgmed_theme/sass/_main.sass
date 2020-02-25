@@ -1,0 +1,51 @@
+.features
+  height: 285px
+  width: vh
+  position: relative
+  // overflow: hidden
+  &_img 
+    height: 285px
+    width: 100%
+    overflow: hidden
+    &-wrap
+      width: 100%
+      overflow: hidden
+      display: flex
+      justify-content: center
+
+
+  &::after
+    content: ''
+    position: absolute
+    height: 285px
+    width: 100%
+    background: $main-color
+    opacity: 0.5
+    display: block
+    top: 0
+    left: 0
+  &_name  
+    position: absolute
+    left: 0
+    width: 100%
+    padding: 60px
+    top: 0
+    z-index: 1
+    display: flex
+    justify-content: center
+    h2 
+      text-align: center
+      display: inline-block
+      // width: 100%
+      text-transform: uppercase
+      position: relative
+      color: #eef
+      &:before
+        position: absolute
+        content: ''
+        width: 150px
+        height: 1px
+        border-bottom: 1px solid #eef
+        bottom: -20px
+        left: 50%
+        margin-left: -75px

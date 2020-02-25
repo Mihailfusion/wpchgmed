@@ -1,0 +1,71 @@
+* 
+  box-sizing: border-box
+  margin: 0
+  padding: 0
+  outline: none
+  // font-family: roboto slab, regular, san-serif
+
+@font-face 
+  font-family: Muller
+  src: url(../fonts/muller.woff2)
+
+
+   
+
+@import 'variables'
+
+a
+  display: block
+  text-decoration: none
+  font-weight: 600
+  color: $main-color
+  &:hover
+    text-decoration: none
+    color: $main-color * 0.5
+
+.a
+  color: #eef 
+  &:hover 
+    color: #eef
+    text-shadow: 0px 0px 2px rgba(255, 255, 255, 0.5)
+
+
+ul
+  margin: 0
+  padding: 0
+  li
+    list-style-type: none
+
+.button 
+  margin-top: 15px
+  background: $main-color
+  border: none
+  color: #eff
+  height: 30px
+  max-width: 160px
+  &:hover
+    background-color: $main-color/0.8
+    text-shadow: 0px 0px 5px #fff
+  &:focus
+    outline: none
+
+
+
+@import 'header'
+@import 'nav'
+@import 'slider'
+@import 'lastnews'
+@import 'about'
+@import 'workers'
+@import 'news'
+@import 'footer'
+@import 'main'
+@import 'sidebar'
+@import 'content'
+@import 'contacts'
+
+
+
+.temp
+  height: 800px
+  width: 100%

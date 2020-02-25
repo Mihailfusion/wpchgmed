@@ -1,0 +1,172 @@
+.contacts
+  background: #fafafa
+.contactsPage
+  width: 100%
+  &-Tabs
+    padding-top: 50px
+    width: 100%
+    display: flex
+    justify-content: center
+  &-polyclinic_tab
+    width: 200px
+    height: 70px
+    padding-top: 17px
+    text-align: center
+    text-transform: uppercase
+    font-weight: 600
+    font-size: 20px
+    color: $main-color
+    background-color: #aaa
+    border: 1px solid #aaa 
+    border-right: 1px solid #888
+    border-radius: 5px 0px 0px 5px
+    cursor: pointer
+    &:hover
+      background-color: #cccccc
+      text-shadow: 1px 1px 30px #000
+    &:focus
+      text-decoration: underline
+  &-hospital_tab
+    width: 200px
+    height: 70px
+    padding-top: 17px
+    text-align: center
+    text-transform: uppercase
+    font-weight: 600
+    font-size: 20px
+    color: $main-color
+    background-color: #aaa
+    border: 1px solid #aaa 
+    border-left: 1px solid #888
+    border-radius: 0px 5px 5px 0px
+    cursor: pointer
+    &:hover
+      background-color: #cccccc
+      text-shadow: 1px 1px 30px #000
+
+.map  
+  color: $main-color
+  margin-bottom: 50px
+  h2 
+    margin:  50px 0
+    text-decoration-line: underline
+    width: 100%
+    text-align: center
+  &-description
+    padding: 0px 0px 0px 80px
+    h3 
+      text-transform: uppercase
+      padding: 10px 0 10px 0
+    p 
+      font-size: 17px
+
+.polyclinic
+  &-map
+    &_map
+      height: 550px
+    &_wrap 
+      display: flex
+
+
+
+.tabs__content 
+  display: none /* по умолчанию прячем все блоки */
+
+.tabs__content.active 
+  display: block/* по умолчанию показываем нужный блок */
+
+.tab.active
+  background-color: $main-color
+  color: #fff
+  text-transform: uppercase
+  box-shadow:  inset 0px 0px 10px 0px rgba(10, 10, 10, 0.22)
+
+
+@media screen and (max-width: 767px)
+  .contactsPage
+    width: 100%
+    &-Tabs
+      padding-top: 50px
+      width: 100%
+      display: flex
+      justify-content: center
+    &-polyclinic_tab
+      width: 120px
+      height: 50px
+      padding-top: 15px
+      text-align: center
+      text-transform: uppercase
+      font-weight: 600
+      font-size: 12px
+      color: $main-color
+      background-color: #aaa
+      border: 1px solid #aaa 
+      border-right: 1px solid #888
+      border-radius: 5px 0px 0px 5px
+      cursor: none
+      &:hover
+        background-color: #cccccc
+        text-shadow: 1px 1px 30px #000
+      &:focus
+        text-decoration: underline
+    &-hospital_tab
+      width: 120px
+      height: 50px
+      padding-top: 15px
+      text-align: center
+      text-transform: uppercase
+      font-weight: 600
+      font-size: 12px
+      color: $main-color
+      background-color: #aaa
+      border: 1px solid #aaa 
+      border-left: 1px solid #888
+      border-radius: 0px 5px 5px 0px
+      cursor: none
+      &:hover
+        background-color: #cccccc
+        text-shadow: 1px 1px 30px #000
+
+  .tab.active
+    background-color: $main-color
+    color: #fff
+    text-transform: uppercase
+    box-shadow:  inset 0px 0px 10px 0px rgba(10, 10, 10, 0.22)
+
+  .polyclinic
+    &-map
+      &_map
+        height: 400px
+      &_wrap 
+        display: flex
+        flex-direction: column-reverse
+
+  .map  
+    color: $main-color
+    margin-bottom: 50px
+    h2 
+      margin:  50px 0
+      text-decoration-line: underline
+      width: 100%
+      text-align: center
+      font-size: 26px
+    &-description
+      padding: 0px 0px 0px 0px
+      h3 
+        font-size: 22px
+        text-transform: uppercase
+        padding: 10px 0 10px 0
+        text-align: center
+      p 
+        font-size: 15px
+        text-align: center
+
+@media screen and (max-width: 767px)
+  .polyclinic
+    &-map
+      &_map
+        // width: 800px
+        height: 400px
+      &_wrap 
+        display: flex
+        flex-direction: column-reverse

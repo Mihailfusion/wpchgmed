@@ -1,0 +1,140 @@
+.nav
+  // border: 1px solid red
+  height: 52px
+  background: $main-color
+  z-index: 99999
+  &_active
+    position: fixed
+    top: 0
+    width: 100%
+  &-wrap 
+    display: flex
+    justify-content: space-between
+
+    &_elem
+      height: 100%
+      flex-basis: 100% 
+      color: #eeeeff
+      text-transform: uppercase
+      font-weight: 600
+      text-align: center
+      margin: 0
+      align-content: center
+      border-top: 4px solid $main-color
+      &:hover .sub-menu
+        display: block
+      &:hover
+        height: 52px
+        background: $main-color*0.85
+        border-top: 4px solid $main-color/0.5
+      a
+        width: 100%
+        height: 100%
+        padding-top: 8px
+        color: #eeeeff
+        display: block
+        height: 100%
+        &:hover
+          color: #eeeeff
+     
+.sub-menu
+  background: $main-color*0.85
+  position: absolute
+  display: none
+  z-index: 2
+  li
+    margin: 0
+    height: 32px
+    z-index: 5
+    border: none
+    &:hover
+      border: none
+      height: 32px
+    a 
+      font-size: 15px
+      text-transform: none
+      padding: 4px 15px
+      color: #fff
+      display: block
+      &:hover
+        background: $main-color*0.75
+
+
+.mobil-nav
+  color: #fff
+  padding: 5px 5px 5px 50px
+  cursor: pointer
+  display: none
+  z-index: 9999
+  &_menu
+    visibility: hidden
+    background: $main-color
+    width: 100%
+    margin-top: -250px
+    height: auto
+    text-align: center
+    color: #eeeeff
+    z-index: 999
+    transition: 0.9s ease
+
+    li 
+      padding: 10px
+      text-transform: uppercase
+      &:nth-child(odd)
+        background: $main-color*0.9
+      a
+        color: #eeeeff
+
+.overlay 
+  width: 100vw
+  height: 100vh
+  background-color: rgba(0,0,0, 0.8)
+  visibility: hidden
+  position: fixed
+  top: 43px
+  z-index: -1
+
+.active
+  visibility: visible
+  margin-top: 0
+  // height: auto
+  
+@media screen and (max-width: 1199px)
+  .nav
+    &-wrap
+      &_elem
+        font-size: 15px
+        line-height: 25px
+
+@media screen and (max-width: 991px)
+  .nav
+    height: 44px
+    &-wrap
+      &_elem
+        font-size: 14px
+        line-height: 20px
+        &:hover
+          height: 44px
+
+@media screen and (max-width: 767px)
+  .nav
+    position: fixed
+    width: 100%
+    top: 0
+    height: 44px
+    &-wrap
+      display: none
+      &_elem
+        font-size: 14px
+        line-height: 20px
+
+  .mobil-nav
+    display: flex
+  
+@media screen and (max-width: 767px)
+  .mobil-nav
+    padding: 5px
+    &_menu
+      &li
+        a
+          color: #eeeeff

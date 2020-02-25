@@ -1,0 +1,132 @@
+.slide
+  width: 100%
+  height: 700px
+  overflow: hidden
+
+  &-img
+    position: relative
+    width: 100vw
+    img 
+      min-width: 100%
+      min-height: 100%
+    &::after
+      top: 0
+      left: 0
+      content: '' 
+      display: block
+      position: absolute
+      width: 100%
+      height: 900px
+      background-color: #4e88c9
+      opacity: 0.8
+  &-title
+    padding-top: 100px
+    position: absolute
+    top: 0
+    color: #eff
+    z-index: 1
+
+  
+h2 
+  font-size: 40px
+
+h5 
+  color: $main-color*.9
+
+.slider
+  position: relative
+
+.slidenav
+  // width: 120px
+  height: 40px
+  position: absolute
+  display: flex
+  justify-content: space-between
+  bottom: 180px
+  right: 80px
+
+
+.slide-arrow_left, .slide-arrow_right
+  width: 40px
+  height: 40px
+  background-color: transparent
+  border: 1px solid transparent
+  color: #ffffff
+  display: flex
+  margin: 0 20px
+  align-items: center
+  justify-content: center
+  cursor: pointer
+  &:hover
+    background-color: rgba(255, 255, 255, .2)
+    border: 1px solid rgba(255, 255, 255, .5)
+
+
+
+.slide-arrow_left
+  padding: 2px 2px 0 0  
+.slide-arrow_right
+  padding: 2px 0 0 2px
+.dots 
+  min-width: 100px
+  padding: 0 10px
+  margin-top: 20px
+  
+
+
+@media screen and (max-width: 1199px)
+  .slide
+    width: 100%
+    height: 700px
+    overflow: hidden
+    &-img
+      position: relative
+      &::after
+        top: 0
+        left: 0
+        content: '' 
+        display: block
+        position: absolute
+        width: 100%
+        height: 900px
+        background-color: #4e88c9
+        opacity: 0.8
+    &-title
+      padding-top: 100px
+      position: absolute
+      top: 0
+      left: 100px
+      color: #eff
+      z-index: 1
+
+
+// @media screen and (max-width: 991px)
+@media screen and (max-width: 767px)
+  .slide-arrow_left
+    display: none  
+  .slide-arrow_right
+    display: none
+  .slide
+    width: 100%
+    height: 500px
+    overflow: hidden
+    &-img
+      position: relative
+      &::after
+        top: 0
+        left: 0
+        content: '' 
+        display: block
+        position: absolute
+        width: 100%
+        height: 900px
+        background-color: #4e88c9
+        opacity: 0.8
+    &-title
+      padding-top: 100px
+      position: absolute
+      top: 0
+      left: 50px
+      color: #eff
+      z-index: 1
+

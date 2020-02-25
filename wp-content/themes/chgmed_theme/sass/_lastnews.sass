@@ -1,0 +1,133 @@
+.lastnews
+  
+  &-content
+    width: 1110px
+    height: 260px
+    margin-top: -130px
+    z-index: 5555
+    position: absolute
+    background-color: #fff
+    border: 1px solid transparent
+    border-radius: 7px
+    box-shadow: 0 52px 43px -22px rgba(0, 0, 0, 0.33)
+    display: flex
+    justify-content: space-around
+    padding: 10px
+
+  &-news
+    height: 100%
+    width: 49%
+    padding: 10px
+
+    // border: 1px solid #000
+    &_title
+      // font-family: Muller
+      margin-bottom: 20px
+      a 
+        color: $main-color
+
+@media screen and (max-width: 1199px)
+  .lastnews
+    &-content
+      width: 940px
+      height: 260px
+      margin-top: -130px
+      z-index: 5555
+      position: absolute
+      background-color: #fff
+      border: 1px solid transparent
+      border-radius: 7px
+      box-shadow: 0 52px 43px -22px rgba(0, 0, 0, 0.33)
+      display: flex
+      padding: 10px
+
+    &-news
+      height: 100%
+      max-width: 50%
+      padding: 10px
+      // border: 1px solid #000
+      &_title
+        // font-family: Muller
+        margin-bottom: 20px
+@media screen and (max-width: 991px)
+  .lastnews
+    &-content
+      width: 678px
+      height: 260px
+      margin-top: -130px
+      z-index: 5555
+      position: absolute
+      background-color: #fff
+      border: 1px solid transparent
+      border-radius: 7px
+      box-shadow: 0 52px 43px -22px rgba(0, 0, 0, 0.33)
+      display: flex
+      padding: 10px
+
+    &-news
+      height: 100%
+      max-width: 50%
+      padding: 10px
+      // border: 1px solid #000
+      span 
+        font-size: 14px
+      &_title
+        // font-family: Muller
+        margin-bottom: 20px
+@media screen and (max-width: 767px)
+  .lastnews
+    &-content
+      width: 486px
+      height: 260px
+      margin-top: -130px
+      z-index: 5555
+      position: absolute
+      background-color: #fff
+      border: 1px solid transparent
+      border-radius: 7px
+      box-shadow: 0 52px 43px -22px rgba(0, 0, 0, 0.33)
+      display: flex
+      padding: 10px
+    &-news
+      height: 100%
+      max-width: 100%
+      padding: 10px
+      // border: 1px solid #000
+      &:nth-child(even)
+        display: none
+      span 
+        font-size: 14px
+      &_title
+        // font-family: Muller
+        margin-bottom: 20px
+
+@media screen and (max-width: 576px)
+  .lastnews
+    display: flex
+    justify-content: center
+    &-content
+      width: 90%
+      height: 230px
+      margin-top: -115px
+      text-align: center
+      z-index: 5555
+      // left: 0 
+      position: absolute
+      background-color: #fff
+      border: 1px solid transparent
+      border-radius: 7px
+      box-shadow: 0 52px 43px -22px rgba(0, 0, 0, 0.33)
+      display: flex
+      padding: 10px
+    &-news
+      height: 100%
+      max-width: 100%
+      padding: 10px
+      // border: 1px solid #000
+      &:nth-child(even)
+        display: none
+      span 
+        font-size: 14px
+      &_title
+        // font-family: Muller
+        margin-bottom: 20px
